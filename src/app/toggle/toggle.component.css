@@ -1,0 +1,191 @@
+.container{
+    display: flex;
+    align-items:center; 
+    margin-left: -1%;
+    margin-top: -3.5%;
+    margin-bottom: 4%;
+    background-color:black;   
+}
+
+.containerToggle{
+    display: flex;
+    align-items:center;  
+    margin-right: 5%; 
+    margin-top: 4.5%;
+    gap: 10%;
+}
+
+.sidebarToggle{
+     
+    margin-bottom: 10%; 
+}
+
+
+.input-group{
+    display: flex;
+    align-items:center;  
+    gap: 25%; 
+    margin-left: 120%;
+    margin-top: 8%;
+    
+}
+
+.searchbar{
+    display: flex;
+    align-items:center;  
+    gap: 5%; 
+    margin-top: -2%;
+    
+}
+
+.containerUser{
+    display: flex;
+    align-items:center;  
+    gap: 5%; 
+    margin-top: 10%;
+    
+}
+
+.containerMain {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 15%;   
+    /* margin-right: -15%;  */
+    margin-top: -40%;
+    /* width: 83%; */
+    /* padding-right: -5; */
+    background-color: gray;
+}
+  
+
+/* .row {
+    display: flex;
+    gap: 25%;
+    margin-bottom: 10%;  
+    align-items:center;
+    justify-content: center;
+    margin-left: -20%;    
+    margin-top: -45%;
+    background-color: lightblue;
+} */
+
+.rowLine1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    gap: 15%;
+    margin-bottom: 8%;  
+    margin-left: -20%; 
+    height: 150%;
+    /* background-color: darkgoldenrod; */
+}
+
+.rowLine2{
+    display: flex;
+    gap: 13%;
+    margin-bottom: 5%;
+    margin-left: -20%;  
+}
+
+.employeeData{
+    margin-left: -20%;  
+}
+
+.table{
+    border-spacing: 1em 1em;
+}
+
+ol.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: black;
+    color: white;
+    margin-left: -20%; 
+}
+
+.sideNavBar{
+    background-color: black;
+    color: white;
+    margin-left: -1%;
+    margin-top: -4.5%;
+}
+
+.dashboardIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.homeIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.settingsIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.attendanceIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.payrollIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.travelIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.confirmationIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.downloadsIcon{
+    display: flex;
+    gap: 2%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.sb-sidenav-footer{
+    margin-top: 4%;
+    background-color: black;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    align-items:start;
+    margin-left: 15%;   
+    margin-top: 0%;
+    padding-top: 1%;
+    background-color: gray;
+}
