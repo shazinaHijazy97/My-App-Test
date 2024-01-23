@@ -9,7 +9,7 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ToggleComponent]
+    imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ToggleComponent, DashboardComponent]
 })
 export class AppComponent {
   title = 'my-app-test';
