@@ -2,9 +2,9 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    margin-left: 15%;   
+    margin-left: 0%;   
     /* margin-right: -15%;  */
-    margin-top: -40%;
+    margin-top: 0%;
     /* width: 83%; */
     /* padding-right: -5; */
     background-color: gray;
@@ -27,25 +27,25 @@
     transition: 0.3s;
     display: flex;
     gap: 15%;
-    margin-bottom: 8%;  
-    margin-left: -20%; 
-    height: 150%;
+    margin-bottom: 3%;  
+    margin-left: -33%; 
+    height: 100%;
     /* background-color: darkgoldenrod; */
 }
 
 .rowLine2{
     display: flex;
     gap: 13%;
-    margin-bottom: 5%;
-    margin-left: -20%;  
+    margin-bottom: 2%;
+    margin-left: -33%;  
 }
 
 .employeeData{
-    margin-left: -20%;  
+    margin-left: -33%;  
 }
 
 .table{
-    border-spacing: 1em 1em;
+    border-spacing: -1em 0em;
 }
 
 ol.breadcrumb {
@@ -53,5 +53,6 @@ ol.breadcrumb {
     list-style: none;
     background-color: black;
     color: white;
-    margin-left: -20%; 
+    margin-left: -33%; 
+    margin-top: -3%;
 }
