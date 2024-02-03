@@ -19,76 +19,104 @@
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
 
                                     <div class="card-body">
+                                     
+                                        <!-- <form [formGroup]="createAccount">
 
-                                        <form>
+                                            <label for="first-name">First Name: </label>
+                                            <input id="first-name" type="text" formControlName="firstName">
+                                          
+                                            <label for="last-name">Last Name: </label>
+                                            <input id="last-name" type="text" formControlName="lastName">
+                                          
+                                          </form> -->
 
-                                            <div class="form-row">
 
-                                                <div class="col-md-6">
 
-                                                    <div class="form-group">
 
-                                                        <label class="small mb-1" for="inputFirstName">First Name</label>
+                                        <form [formGroup]="createAccount" (ngSubmit)="onSubmit()">
 
-                                                        <input class="form-control py-4" id="inputFirstName" type="text" placeholder="Enter first name" />
+    <div class="form-row">
 
-                                                    </div>
+        <div class="col-md-6">
 
-                                                </div>
+            <div class="form-group">
 
-                                                <div class="col-md-6">
+                <label class="small mb-1" for="firstName">First Name</label>
 
-                                                    <div class="form-group">
+                <input class="form-control py-4" id="firstName" type="text"   [formControl]= "firstName" placeholder="Enter first name" />
+        
+            </div>
 
-                                                        <label class="small mb-1" for="inputLastName">Last Name</label>
+        </div>
 
-                                                        <input class="form-control py-4" id="inputLastName" type="text" placeholder="Enter last name" />
+        <div class="col-md-6">
 
-                                                    </div>
+            <div class="form-group">
 
-                                                </div>
+                <label class="small mb-1" for="lastName">Last Name</label>
 
-                                            </div>
+                <input class="form-control py-4" id="lastName" type="text" [formControl]= "lastName"  placeholder="Enter last name" />
 
-                                            <div class="form-group">
+            </div>
 
-                                                <label class="small mb-1" for="inputEmailAddress">Email</label>
+        </div>
 
-                                                <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" />
+        <div class="col-md-6">
 
-                                            </div>
+            <div class="form-group">
 
-                                            <div class="form-row">
+                <label class="small mb-1" for="contactNumber">Contact Number</label>
 
-                                                <div class="col-md-6">
+                <input class="form-control py-4" id="contactNumber" type="tel" [formControl]= "contactNumber"  placeholder="Enter contact number" />
 
-                                                    <div class="form-group">
+            </div>
 
-                                                        <label class="small mb-1" for="inputPassword">Password</label>
+        </div>
 
-                                                        <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" />
+    </div>
 
-                                                    </div>
+    <div class="form-group">
 
-                                                </div>
+        <label class="small mb-1" for="emailAddress">Email</label>
 
-                                                <div class="col-md-6">
+        <input class="form-control py-4" id="emailAddress" type="email" [formControl]= "emailAddress" aria-describedby="emailHelp" placeholder="Enter email address" />
 
-                                                    <div class="form-group">
+    </div>
 
-                                                        <label class="small mb-1" for="inputConfirmPassword">Confirm Password</label>
+    <div class="form-row">
 
-                                                        <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" />
+        <div class="col-md-6">
 
-                                                    </div>
+            <div class="form-group">
 
-                                                </div>
+                <label class="small mb-1" for="password">Password</label>
 
-                                            </div>
+                <input class="form-control py-4" id="password" type="password" [formControl]= "password" placeholder="Enter password" />
 
-                                            <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div>
+            </div>
 
-                                        </form>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="form-group">
+
+                <label class="small mb-1" for="confirmPassword">Confirm Password</label>
+
+                <input class="form-control py-4" id="confirmPassword" type="password" [formControl]= "confirmPassword" placeholder="Confirm password" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <button type="submit" [disabled]="!createAccount.valid">Submit</button>
+    <!-- <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div> -->
+    <!-- <P>formStatus:{{createAccount.status}}</P> -->
+
+</form>
 
                                     </div>
 

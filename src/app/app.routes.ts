@@ -6,11 +6,14 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { AppComponent } from './app.component';
 
+
 export const routes: Routes = [
-    {path: ' ', component: AppComponent},
+    {path:"", redirectTo:"login", pathMatch:"full"},
+    // {path: ' ', component: AppComponent},
     {path: 'dashboard', component: DashboardComponent},
     {path: 'toggle', component: ToggleComponent},
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegistrationComponent},
     {path: 'changepassword', component: ForgotPasswordComponent},
+
 ];
