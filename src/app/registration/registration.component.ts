@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-// import { LoginComponent } from '../login/login.component';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-registration',
@@ -19,7 +19,7 @@ export class RegistrationComponent {
   confirmPassword = new FormControl(' ')
 
   createAccount = new FormGroup({
-    firstName: new FormControl(' ',Validators.required),
+    firstName: new FormControl(' '),
   lastName: new FormControl(' '),
   contactNumber: new FormControl(' '),
   emailAddress:  new FormControl(' '),
@@ -32,6 +32,7 @@ export class RegistrationComponent {
   onSubmit() {
     // TODO: Use EventEmitter with form value
     console.warn(this.createAccount.value);
+    // return LoginComponent;
   }
   
   
